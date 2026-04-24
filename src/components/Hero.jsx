@@ -8,9 +8,9 @@ const Hero = () => {
         <div className="hero-content-v2">
           <div className="hero-text-block">
             <span className="subtitle-gold">CONFEITARIA ARTESANAL PREMIUM</span>
-            <h1 className="main-title title-serif-italic">
-              <span className="italic-highlight">celebre momentos únicos</span>
-              <span className="sub-title">com Cris Cakes</span>
+            <h1 className="main-title">
+              <span className="brand-name title-serif">CRIS CAKES</span>
+              <span className="italic-highlight">confeitaria artesanal premium</span>
             </h1>
             <p className="tagline">
               PRODUTOS FEITOS À MÃO COM OS MELHORES INGREDIENTES PARA TORNAR SEU EVENTO INESQUECÍVEL.

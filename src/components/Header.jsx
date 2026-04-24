@@ -30,9 +30,7 @@ const Header = () => {
           </div>
 
           <div className="header-logo">
-            <Link to="/">
-              <img src="/logo.svg" alt="Cris Cakes Confeitaria" className="logo-img" style={{ maxHeight: '60px' }} />
-            </Link>
+            <Link to="/" className="logo-text title-serif">CRIS CAKES</Link>
           </div>
 
           <div className="header-actions">

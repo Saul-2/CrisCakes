@@ -92,7 +92,8 @@
 
 .essencia-image-side {
   flex: 1;
-  min-height: 400px;
+  min-height: 350px;
+  height: 400px;
 }
 
 .essencia-image-side img {

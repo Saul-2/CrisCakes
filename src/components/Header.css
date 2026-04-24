@@ -399,7 +399,7 @@
 @media (max-width: 992px) {
   .header-main {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
     text-align: center;
     padding: 1rem;
   }
@@ -407,14 +407,24 @@
   .header-search {
     margin: 0 auto;
     order: 2;
+    width: 100%;
+    max-width: 100%;
   }
   
   .header-logo {
     order: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .logo-text {
+    font-size: 1.8rem;
+    letter-spacing: 3px;
   }
   
   .header-actions {
-    justify-content: center;
+    position: absolute;
+    top: 3.5rem;
+    right: 1rem;
     order: 3;
   }
   
@@ -424,25 +434,21 @@
   
   .nav-list {
     gap: 1rem;
-    padding: 1rem;
+    padding: 0.8rem;
+    justify-content: center;
+  }
+
+  .nav-list > li > a {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 1.5rem;
   }
   
-  .dropdown-menu {
-    position: static;
-    transform: none;
-    opacity: 1;
-    visibility: visible;
-    box-shadow: none;
-    border: none;
-    padding: 1rem 0;
-    display: none;
-  }
-  
-  .nav-item-dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-  .megamenu-grid {
-    grid-template-columns: 1fr 1fr;
+  .header-top p {
+    font-size: 0.6rem;
   }
 }

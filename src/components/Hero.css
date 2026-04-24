@@ -1,137 +1,130 @@
 .hero {
   width: 100%;
-  padding: 0;
-  margin: 0;
-  background-color: var(--color-bg); /* cream background outside */
+  background-color: #fcfaf7;
+  overflow: hidden;
 }
 
-.hero-banner-custom {
-  background-color: var(--color-primary-light); /* Swapped from sage green to brown palette */
-  width: 100%;
+.hero-banner-premium {
   display: flex;
   flex-direction: column;
+  min-height: 80vh;
+}
+
+@media (min-width: 992px) {
+  .hero-banner-premium {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+.hero-content-v2 {
+  flex: 1;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 4rem 2rem;
-  gap: 3rem;
+  background-color: var(--color-primary-light);
+  color: #fff;
 }
 
 @media (min-width: 992px) {
-  .hero-banner-custom {
-    flex-direction: row;
-    padding: 6rem 5rem;
-    gap: 5rem;
+  .hero-content-v2 {
+    padding: 6rem;
   }
 }
 
-.hero-content-left {
-  flex: 1;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (min-width: 992px) {
-  .hero-content-left {
-    text-align: center; /* Still center-aligned text in the block */
-  }
-}
-
-.hero-content-left .title-serif-italic {
-  font-size: 3.5rem;
-  line-height: 1.1;
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width: 992px) {
-  .hero-content-left .title-serif-italic {
-    font-size: 5rem;
-  }
-}
-
-.text-gold {
-  color: #cba87c;
-  margin-bottom: 0.5rem;
-}
-
-.text-white {
-  color: #ffffff !important;
-  margin-bottom: 1.5rem !important;
-}
-
-.hero-desc {
-  font-family: var(--font-sans);
-  color: #ffffff;
-  font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  margin-bottom: 2.5rem;
-}
-
-@media (min-width: 992px) {
-  .hero-desc {
-    font-size: 1rem;
-    letter-spacing: 2px;
-  }
-}
-
-.hero-btn {
-  background-color: #ffffff;
-  color: #cba87c;
-  font-family: var(--font-sans);
-  font-weight: 700;
-  font-size: 1rem;
-  padding: 1rem 2.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  border: 2px solid #ffffff;
-  display: inline-block;
-}
-
-.hero-btn:hover {
-  background-color: transparent;
-  color: #ffffff;
-}
-
-.hero-image-right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-frame {
-  background-color: #ffffff;
-  padding: 1.5rem;
-  border-radius: 10px; /* Slight rounding for an elegant look */
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-  position: relative;
+.hero-text-block {
   max-width: 500px;
 }
 
-/* Optional pseudo-elements to create a slight scalloped/vintage corner effect if desired */
-.image-frame::before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-  border: 1px solid rgba(203, 168, 124, 0.3); /* Thin gold inner border */
-  pointer-events: none;
-  z-index: 2;
+.subtitle-gold {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+  color: var(--color-secondary);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
-.image-frame img {
+.main-title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.italic-highlight {
+  font-size: 3.5rem;
+  color: var(--color-secondary);
+}
+
+.sub-title {
+  font-size: 4rem;
+  color: #fff;
+  margin-top: -10px;
+}
+
+@media (min-width: 1200px) {
+  .italic-highlight { font-size: 4.5rem; }
+  .sub-title { font-size: 5.5rem; }
+}
+
+.tagline {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  opacity: 0.9;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary-elegant {
+  background-color: #fff;
+  color: var(--color-primary);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-elegant:hover {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.btn-outline-elegant {
+  border: 1px solid rgba(255,255,255,0.5);
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-elegant:hover {
+  background-color: rgba(255,255,255,0.1);
+  border-color: #fff;
+}
+
+.hero-image-v2 {
+  flex: 1.2;
+  position: relative;
+  min-height: 400px;
+}
+
+.hero-image-v2 img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
   object-fit: cover;
-  border-radius: 4px;
 }

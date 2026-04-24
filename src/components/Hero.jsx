@@ -1,29 +1,28 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = () => {
   return (
     <section className="hero">
-      <div className="hero-banner-custom animate-fade-in">
-        <div className="hero-content-left">
-          <h2 className="title-serif-italic text-gold">celebre momentos únicos</h2>
-          <h2 className="title-serif-italic text-white">com Cris Cakes</h2>
-          <p className="hero-desc">
-            OPÇÕES PARA TODOS OS GOSTOS.<br/>
-            CELEBRE COM AMOR, CELEBRE COM CRIS CAKES.
-          </p>
-          <a href="#nossos-bolos" className="hero-btn">QUERO ENCOMENDAR</a>
-        </div>
-        
-        <div className="hero-image-right">
-          <div className="image-frame">
-            <img 
-              src="/criscakes_delight_1776802119_3880418948475354069_60095438454_1.jpg" 
-              alt="Bolo Artesanal Cris Cakes" 
-              className="enhanced-image" 
-            />
+      <div className="hero-banner-premium animate-fade-in">
+        <div className="hero-content-v2">
+          <div className="hero-text-block">
+            <span className="subtitle-gold">CONFEITARIA ARTESANAL PREMIUM</span>
+            <h1 className="main-title title-serif-italic">
+              <span className="italic-highlight">celebre momentos únicos</span>
+              <span className="sub-title">com Cris Cakes</span>
+            </h1>
+            <p className="tagline">
+              PRODUTOS FEITOS À MÃO COM OS MELHORES INGREDIENTES PARA TORNAR SEU EVENTO INESQUECÍVEL.
+            </p>
+            <div className="hero-btns">
+              <a href="#favoritos" className="btn-primary-elegant">CONHEÇA NOSSOS FAVORITOS</a>
+              <a href="#kits" className="btn-outline-elegant">KIT FESTAS</a>
+            </div>
           </div>
+        </div>
+        <div className="hero-image-v2">
+           <img src="/criscakes_delight_1776802119_3880418948475354069_60095438454_1.jpg" alt="Bolo Cris Cakes" className="enhanced-image" />
         </div>
       </div>
     </section>

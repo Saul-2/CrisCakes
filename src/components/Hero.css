@@ -1,0 +1,140 @@
+.hero {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-bg); /* cream background outside */
+}
+
+.hero-banner-custom {
+  background-color: var(--color-primary-light); /* Swapped from sage green to brown palette */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 3rem;
+}
+
+@media (min-width: 992px) {
+  .hero-banner-custom {
+    flex-direction: row;
+    padding: 6rem 5rem;
+    gap: 5rem;
+  }
+}
+
+.hero-content-left {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .hero-content-left {
+    text-align: center; /* Still center-aligned text in the block */
+  }
+}
+
+.hero-content-left .title-serif-italic {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .hero-content-left .title-serif-italic {
+    font-size: 5rem;
+  }
+}
+
+.text-gold {
+  color: #cba87c;
+  background: #fff;
+  padding: 0 1rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.text-white {
+  color: #ffffff !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.hero-desc {
+  font-family: var(--font-sans);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 992px) {
+  .hero-desc {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+}
+
+.hero-btn {
+  background-color: #ffffff;
+  color: #cba87c;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: 2px solid #ffffff;
+  display: inline-block;
+}
+
+.hero-btn:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.hero-image-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-frame {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px; /* Slight rounding for an elegant look */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  position: relative;
+  max-width: 500px;
+}
+
+/* Optional pseudo-elements to create a slight scalloped/vintage corner effect if desired */
+.image-frame::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 1px solid rgba(203, 168, 124, 0.3); /* Thin gold inner border */
+  pointer-events: none;
+  z-index: 2;
+}
+
+.image-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 4px;
+}

@@ -1,0 +1,283 @@
+.menu-header {
+  margin-bottom: 3rem;
+}
+
+.menu-header .subtitle {
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  color: var(--color-text-light);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.menu-header .title-serif {
+  font-size: 2.8rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.menu-note {
+  font-size: 0.9rem;
+  color: #c95c5c; /* Gentle warning color */
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  background: rgba(56, 37, 30, 0.05);
+}
+
+.tab-btn.active {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.menu-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+}
+
+/* Doces Gourmet */
+.doces-header {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.price-box {
+  background: var(--color-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 250px;
+  border: 1px solid rgba(203, 168, 124, 0.3);
+}
+
+.price-box h4 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+.price-box span {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.price-box .price {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.btn-sm {
+  padding: 0.5rem 1.5rem;
+  font-size: 0.8rem;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.flavor-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.flavor-list li {
+  background: var(--color-bg);
+  padding: 0.8rem 1.2rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+}
+
+.flavor-list li::before {
+  content: '•';
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  margin-right: 0.8rem;
+  line-height: 0;
+}
+
+/* Kits Festa */
+.kits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.kit-card {
+  background: var(--color-bg);
+  padding: 2.5rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid rgba(203, 168, 124, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.kit-card .title-script {
+  font-size: 3rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.kit-card ul {
+  flex-grow: 1;
+  margin-bottom: 2rem;
+}
+
+.kit-card ul li {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.kit-card .price {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  font-family: var(--font-serif);
+}
+
+/* Bolos */
+.bolos-tables {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.table-wrapper h3 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.price-table td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.price-table td:first-child {
+  font-weight: 500;
+}
+
+.price-table td:last-child {
+  text-align: right;
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.small-note {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  margin-top: 1rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.recheios-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  background: var(--color-bg);
+  padding: 3rem;
+  border-radius: 8px;
+}
+
+.recheio-list h3 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  font-size: 0.85rem;
+  color: #c95c5c;
+  font-family: var(--font-sans);
+  font-style: italic;
+}
+
+.recheio-list ul {
+  column-count: 1;
+}
+
+@media (min-width: 768px) {
+  .recheio-list ul {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+}
+
+.recheio-list li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.recheio-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+  .menu-content {
+    padding: 1.5rem;
+  }
+  .doces-header {
+    flex-direction: column;
+  }
+}
